@@ -7,8 +7,7 @@ Audiosetを用いた強化学習を行う際、データセットのcsvから必
 
 ## 使い方
 ### 事前準備
-[Audiosetのダウンロードページ]
-(https://research.google.com/audioset/download.html)
+[Audiosetのダウンロードページ](https://research.google.com/audioset/download.html)
 から必要なファイルをダウンロードし、target下に入れる
 * class_labels_indices.csv
 * eval_segments.csv
