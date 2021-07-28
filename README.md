@@ -21,9 +21,9 @@ Audiosetを用いた強化学習を行う際、データセットのcsvから必
 ### 動作
 初めに、csvデータがほしいクラス名を、`select.py`内の配列`**TARGETLABELS**`の中身にリストとして記す。
 
-> python select.py
+> python select.py  
 を実行し、抽出元にしたいファイルを選択する。
-> 終了しました!!!
+> 終了しました!!!  
 の表示が出れば成功。
 抽出後のcsvは`result/[クラス名].csv`の形式で追加される。
 また、抽出に用いたクラス名とラベルの対応表が`result/label.csv`に追加される。
