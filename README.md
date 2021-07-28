@@ -27,7 +27,6 @@ Audiosetを用いた強化学習を行う際、データセットのcsvから必
     'Wind',
     'Music',
     'Silence',
-
 ]
 
 
