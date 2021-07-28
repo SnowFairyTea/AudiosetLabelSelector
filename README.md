@@ -1,0 +1,2 @@
+# AudiosetLabelSelector
+AudiosetのcsvをLabel（クラス名）でSelectします
