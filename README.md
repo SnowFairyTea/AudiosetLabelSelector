@@ -19,8 +19,19 @@ Audiosetを用いた強化学習を行う際、データセットのcsvから必
 [クラス名の参考](https://research.google.com/audioset/dataset/index.html)
 
 ### 動作
-初めに、csvデータがほしいクラス名を、`select.py`内の配列`**TARGETLABELS**`の中身にリストとして記す。
+初めに、[クラス名の参考](https://research.google.com/audioset/dataset/index.html)をもとにcsvデータがほしいクラス名探し、`select.py`内の配列`**TARGETLABELS**`の中身にリストとして記す。
+例：
+> TARGETLABELS=[
+    'Speech',
+    'Animal',
+    'Wind',
+    'Music',
+    'Silence',
 
+]
+
+
+次に
 > python select.py  
 
 
