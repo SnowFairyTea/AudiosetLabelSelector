@@ -23,9 +23,9 @@ def main():
     else:
         labels=SelectLabels(TARGETLABELS)
     filename=SelectFilename()
-    
+    num=1000
 
-    CreateFiles(labels, filename, 50)
+    CreateFiles(labels, filename, num)
     print('終了しました!!!')
 
 
