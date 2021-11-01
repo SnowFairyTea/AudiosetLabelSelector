@@ -28,6 +28,7 @@ def main():
     else:
         labels=SelectLabels(TARGETLABELS)
 
+
     num=[]
     if(len(argv) > 2):
         num.append(ReadInputfile(argv[2]))
@@ -43,6 +44,7 @@ def main():
     else:
         num.append(num[0]//2)
     print("eval:",num)
+ 
 
     if(len(argv) > 4):
         num.append(ReadInputfile(argv[4]))
