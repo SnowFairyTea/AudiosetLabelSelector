@@ -31,7 +31,7 @@ def main():
 
     num=[]
     if(len(argv) > 2):
-        num.append(ReadInputfile(argv[2]))
+        num.append(int(argv[2]))
 
     else:
         num.append(1000)
@@ -39,7 +39,7 @@ def main():
     
 
     if(len(argv) > 3):
-        num.append(ReadInputfile(argv[3]))
+        num.append(int(argv[3]))
         
     else:
         num.append(num[0]//2)
@@ -47,7 +47,7 @@ def main():
  
 
     if(len(argv) > 4):
-        num.append(ReadInputfile(argv[4]))
+        num.append(int(argv[4]))
         
     else:
         num.append(0)
@@ -61,7 +61,7 @@ def main():
 
 def preprocess():
     try:
-        os.mkdir(os.path.join(DIR,'result',"blanced_train"))
+        os.mkdir(os.path.join(DIR,'result',"balanced_train"))
     except:
         None
     try:
@@ -69,7 +69,7 @@ def preprocess():
     except:
         None
     try:
-        os.mkdir(os.path.join(DIR,'result',"unblanced_train"))
+        os.mkdir(os.path.join(DIR,'result',"unbalanced_train"))
     except:
         None
     
@@ -87,7 +87,7 @@ def CreateFiles(labels,  num=[100,50,0]):
             for line in f.readlines():
                 if (line.find(label[1]) >= 0):
                     result.append(line)
-        with open(os.path.join(DIR,'result',"blanced_train",label[0]+'.csv'), mode='w') as f:
+        with open(os.path.join(DIR,'result',"balanced_train",label[0]+'.csv'), mode='w') as f:
             f.writelines(result[0 : num[0]])
 
         #evalを作成
