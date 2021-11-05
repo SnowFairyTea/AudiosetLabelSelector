@@ -104,7 +104,7 @@ def CreateFiles(labels,  num=[100,50,0]):
             for line in f.readlines():
                 if (line.find(label[1]) >= 0):
                     result.append(line)
-        with open(os.path.join(DIR,'result',"unblanced_train",label[0]+'.csv'), mode='w') as f:
+        with open(os.path.join(DIR,'result',"unbalanced_train",label[0]+'.csv'), mode='w') as f:
             f.writelines(result[0 : num[2]])
 
 #配列targetの要素をラベルに含む行のリストをCreateFileに流せる形式で返す
