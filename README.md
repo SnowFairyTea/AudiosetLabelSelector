@@ -22,12 +22,12 @@ Audiosetを用いた学習を行う際、データセットのcsvから必要な
 初めに、[このページ](https://research.google.com/audioset/dataset/index.html)をもとにcsvデータがほしいクラス名探し、`select.py`内の配列`**TARGETLABELS**`の中身にリストとして記す。  
 例：
 > TARGETLABELS=[
-    'Speech',
-    'Animal',
-    'Wind',
-    'Music',
-    'Silence',
-]
+    'Speech',  
+    'Animal',  
+    'Wind',  
+    'Music',  
+    'Silence',  
+]  
 
 
 次に
@@ -43,9 +43,9 @@ Audiosetを用いた学習を行う際、データセットのcsvから必要な
 また、抽出に用いたクラス名とラベルの対応表が`result/label.csv`に追加される。
 
 ## 便利機能
-コマンドライン引数で、動作を指定することができます。
-第一引数：１行に１つのラベル名が記されたテキストファイル
-第二～四引数：balanced_train,eval,unblanced_trainそれぞれから抜くデータの数
-例：    
+コマンドライン引数で、動作を指定することができます。  
+第一引数：１行に１つのラベル名が記されたテキストファイル  
+第二～四引数：balanced_train,eval,unblanced_trainそれぞれから抜くデータの数  
+例：      
 
 > python select.py test.txt 1000 500 0
