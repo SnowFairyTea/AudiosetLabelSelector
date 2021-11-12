@@ -90,6 +90,8 @@ def CreateFiles(labels,  num=[100,50,0]):
         with open(os.path.join(DIR,'result',"balanced_train",label[0]+'.csv'), mode='w') as f:
             f.writelines(result[0 : num[0]])
 
+
+        result=list()
         #evalを作成
         with open(DIR+'/target/' + 'eval_segments.csv') as f:
             
@@ -99,12 +101,13 @@ def CreateFiles(labels,  num=[100,50,0]):
         with open(os.path.join(DIR,'result',"eval",label[0]+'.csv'), mode='w') as f:
             f.writelines(result[0 : num[1]])
 
-        #unblanced_trainを作成
+        #unbalanced_trainを作成
+        result=list()
         with open(DIR+'/target/' + 'unbalanced_train_segments.csv') as f:
             for line in f.readlines():
                 if (line.find(label[1]) >= 0):
                     result.append(line)
-        with open(os.path.join(DIR,'result',"unblanced_train",label[0]+'.csv'), mode='w') as f:
+        with open(os.path.join(DIR,'result',"unbalanced_train",label[0]+'.csv'), mode='w') as f:
             f.writelines(result[0 : num[2]])
 
 #配列targetの要素をラベルに含む行のリストをCreateFileに流せる形式で返す
