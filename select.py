@@ -123,7 +123,8 @@ def SelectLabels(target):
                 result.append(line[3:0:-1])
     with open(DIR+'/result/labels.csv', mode='w') as f:
         for i in result:
-            f.write(','.join(i) + '\n')
+            #f.write(','.join(i) + '\n')
+            f.write('"'+i[0]+'",'+i[1]+'\n')
     return result
 
 # 
@@ -149,6 +150,7 @@ def ReadInputfile(argv):
     r=[]
     with open(argv) as f:
         for i in f.read().splitlines():
+            
             r.append(i)
     return r
 

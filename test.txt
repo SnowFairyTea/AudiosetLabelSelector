@@ -1,2 +1,3 @@
-Music
-Speech
+Civil defense siren
+Police car (siren)
+Fire engine, fire truck (siren)
