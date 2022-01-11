@@ -19,22 +19,35 @@ Audiosetを用いた学習を行う際、データセットのcsvから必要な
 [クラス名の参考](https://research.google.com/audioset/dataset/index.html)
 
 ### 動作
-初めに、[このページ](https://research.google.com/audioset/dataset/index.html)をもとにcsvデータがほしいクラス名探し、`select.py`内の配列`**TARGETLABELS**`の中身にリストとして記す。  
-例：
-> TARGETLABELS=[
-    'Speech',  
-    'Animal',  
-    'Wind',  
-    'Music',  
-    'Silence',  
-]  
+初めに、[このページ](https://research.google.com/audioset/dataset/index.html)をもとにcsvデータがほしいクラス名を探す。  
+その後、以下の方法のどちらかを用いて抜き出すクラスを指定する。  
+* １行に１つのラベル名が記されたテキストファイル 作成し、実行時の第一引数とする。
+    例:  
+    >ClassName.txt  
+    >Speech  
+    Animal  
+    Wind  
+    Music  
+    Silence  
+    
+    とし、
+    > python select.py ClassName.txt  
+    
+* `select.py`内の配列`**TARGETLABELS**`の中身にリストとして記す。  
+    例：
+    > TARGETLABELS=[  
+        'Speech',  
+        'Animal',  
+        'Wind',  
+        'Music',  
+        'Silence',  
+    ]  
+    
+    とし、
+    > python select.py  
+    を実行する。
 
 
-次に
-> python select.py  
-
-
-を実行する。
 > 終了しました!!!  
 
 
