@@ -33,6 +33,8 @@ Audiosetを用いた学習を行う際、データセットのcsvから必要な
     とし、
     > python select.py ClassName.txt  
     
+    と実行する。
+    
 * `select.py`内の配列`**TARGETLABELS**`の中身にリストとして記す。  
     例：
     > TARGETLABELS=[  
@@ -45,7 +47,8 @@ Audiosetを用いた学習を行う際、データセットのcsvから必要な
     
     とし、
     > python select.py  
-    を実行する。
+    
+    と実行する。
 
 
 > 終了しました!!!  
