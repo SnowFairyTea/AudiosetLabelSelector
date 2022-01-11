@@ -24,7 +24,7 @@ Audiosetを用いた学習を行う際、データセットのcsvから必要な
 * １行に１つのラベル名が記されたテキストファイル 作成し、実行時の第一引数とする。  
     例:  
     >ClassName.txt  
-    >Speech  
+    >>Speech  
     Animal  
     Wind  
     Music  
